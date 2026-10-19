@@ -38,6 +38,8 @@
   "env": {
     "APP_ENV": "production",
     "APP_KEY": "base64:SmdaQpG8y5cxK49o8+mcbaO9NYxzBzEHhXVpBTZS5zU=",
+    "APP_URL": "https://template-paket-silver-hjt.vercel.app",
+    "ASSET_URL": "https://template-paket-silver-hjt.vercel.app",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",

@@ -22,10 +22,12 @@ foreach ($tempDirs as $dir) {
     }
 }
 
-// Tandai lingkungan Vercel
+// Tandai lingkungan Vercel dan paksa HTTPS
 putenv('VERCEL=1');
 $_ENV['VERCEL'] = '1';
 $_SERVER['VERCEL'] = '1';
+$_SERVER['HTTPS'] = 'on';
+$_SERVER['SERVER_PORT'] = 443;
 
 // Fallback APP_KEY agar enkripsi cookie dan sesi Laravel tidak gagal
 if (empty($_ENV['APP_KEY']) && empty(getenv('APP_KEY'))) {
