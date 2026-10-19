@@ -1,9 +1,14 @@
 <?php
 
-// Pastikan direktori sementara /tmp tersedia untuk Laravel (filesystem serverless Vercel read-only)
 $tempDirs = [
     '/tmp/views',
     '/tmp/cache',
+    '/tmp/sessions',
+    '/tmp/storage',
+    '/tmp/storage/framework/views',
+    '/tmp/storage/framework/cache',
+    '/tmp/storage/framework/sessions',
+    '/tmp/storage/logs',
 ];
 
 foreach ($tempDirs as $dir) {
