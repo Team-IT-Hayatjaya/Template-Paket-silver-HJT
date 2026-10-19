@@ -3,8 +3,8 @@
 .env
 .env.backup
 .env.production
-/database/*.sqlite
 /database/*.sqlite-journal
+!/database/database.sqlite
 .phpactor.json
 .phpunit.result.cache
 /.codex
@@ -16,7 +16,7 @@
 /.zed
 /auth.json
 /node_modules
-/public/build
+!/public/build
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
